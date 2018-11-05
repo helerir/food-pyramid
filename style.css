@@ -1,0 +1,22 @@
+.canvas-container {
+   display: flex;
+   justify-content: flex-start;
+   margin-left: 50px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+.forms-container {
+   display: flex;
+   flex-direction: column;
+   width: 300px;
+   padding-left: 40px;
+}
+
+.custom-select {
+   margin-bottom: 10px;
+}
+
+.label {
+   padding-left: 10px;
+}

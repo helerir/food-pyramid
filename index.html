@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css">
+   <title>Food Pyramid</title>
+</head>
+<body>
+   <div class="canvas-container">
+      <canvas id="canvas" width="200" height="200"></canvas>
+   </div>
+   <div class="forms-container">
+      <label for="input1">Suhkur ja maiustused</label>
+      <select id="input1" class="custom-select">
+         <option >Vali siit osakaal</option>
+         <option selected value="1">10%</option>
+         <option value="2">20%</option>
+         <option value="3">30%</option>
+         <option value="4">40%</option>
+         <option value="5">50%</option>
+         <option value="6">60%</option>
+         <option value="7">70%</option>
+         <option value="8">80%</option>
+         <option value="9">90%</option>
+         <option value="10">100%</option>
+      </select>
+      <label for="input2">Kala, linnuliha, muna, liha</label>
+      <select id="input2" class="custom-select">
+         <option >Vali siit osakaal</option>
+         <option selected value="1">10%</option>
+         <option value="2">20%</option>
+         <option value="3">30%</option>
+         <option value="4">40%</option>
+         <option value="5">50%</option>
+         <option value="6">60%</option>
+         <option value="7">70%</option>
+         <option value="8">80%</option>
+         <option value="9">90%</option>
+         <option value="10">100%</option>
+      </select>
+      <label for="input3">Piim ja piimatooted</label>
+      <select id="input3" class="custom-select">
+         <option >Vali siit osakaal</option>
+         <option value="1">10%</option>
+         <option value="2">20%</option>
+         <option selected value="3">30%</option>
+         <option value="4">40%</option>
+         <option value="5">50%</option>
+         <option value="6">60%</option>
+         <option value="7">70%</option>
+         <option value="8">80%</option>
+         <option value="9">90%</option>
+         <option value="10">100%</option>
+      </select>
+      <label for="input4">Lisatavad toidurasvad, pähklid, seemned, õliviljad</label>
+      <select id="input4" class="custom-select">
+         <option >Vali siit osakaal</option>
+         <option value="1">10%</option>
+         <option selected value="2">20%</option>
+         <option value="3">30%</option>
+         <option value="4">40%</option>
+         <option value="5">50%</option>
+         <option value="6">60%</option>
+         <option value="7">70%</option>
+         <option value="8">80%</option>
+         <option value="9">90%</option>
+         <option value="10">100%</option>
+      </select>
+      <label for="input5">Puu- ja köögiviljad, marjad</label>
+      <select id="input5" class="custom-select">
+         <option >Vali siit osakaal</option>
+         <option selected value="1">10%</option>
+         <option value="2">20%</option>
+         <option value="3">30%</option>
+         <option value="4">40%</option>
+         <option value="5">50%</option>
+         <option value="6">60%</option>
+         <option value="7">70%</option>
+         <option value="8">80%</option>
+         <option value="9">90%</option>
+         <option value="10">100%</option>
+      </select>
+      <label for="input6">Teraviljatooted, kartul</label>
+      <select id="input6" class="custom-select">
+         <option >Vali siit osakaal</option>
+         <option value="1">10%</option>
+         <option selected value="2">20%</option>
+         <option value="3">30%</option>
+         <option value="4">40%</option>
+         <option value="5">50%</option>
+         <option value="6">60%</option>
+         <option value="7">70%</option>
+         <option value="8">80%</option>
+         <option value="9">90%</option>
+         <option value="10">100%</option>
+      </select>
+      <button type="button" class="btn btn-primary" onclick="drawPyramid()">Joonista</button>
+      <div hidden class="alert alert-warning" role="alert" id="notification">
+      </div>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   <script src="app.js"></script>
+</body>
+</html>
