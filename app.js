@@ -6,7 +6,7 @@ const pyramidHeight = 176;
 let group1, group2, group3, group4, group5, group6;
 let ceil2, ceil3, ceil4, ceil5, ceil6;
 let sum;
-let notification = document.getElementById("notification");;
+let notification = document.getElementById("notification");
 
 function drawInitalPyramid() {
    ctx.beginPath();
