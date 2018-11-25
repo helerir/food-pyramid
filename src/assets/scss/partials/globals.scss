@@ -1,0 +1,31 @@
+// => Globals
+// ------------------------------------------------------------------------------
+html {
+  -webkit-tap-highlight-color: rgba(theme-color('primary'), .15);
+}
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 1rem;
+}
+
+ul.row {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+
+  > li {
+    margin-top: 0;
+  }
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+}

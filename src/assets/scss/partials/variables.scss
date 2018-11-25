@@ -1,0 +1,69 @@
+// => Variables
+// ------------------------------------------------------------------------------
+
+$enable-rounded:            false;
+$enable-shadows:            false;
+$enable-gradients:          false;
+$enable-transitions:        false;
+$enable-hover-media-query:  false;
+$enable-grid-classes:       true;
+$enable-print-styles:       false;
+
+//
+// Color system
+//
+
+$white:  #fff;
+$black:  #000;
+
+// Set a specific jump point for requesting color jumps
+$theme-color-interval: 8%;
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold: 150;
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark: $black;
+$yiq-text-light: $white;
+
+$body-bg: #fff;
+$body-color: $black;
+$link-color: $black;
+$text-color: $black;
+
+$theme-colors: (
+        primary: #134a3e,
+        secondary: #F52331,
+        success: #2ACC45,
+        info: #4DADF7,
+        warning: #FD7E14,
+        danger: #E03131,
+        light: #D0D1D2,
+        dark: #3D3F4B
+);
+
+// Typo
+//
+
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base: $font-family-sans-serif;
+$headings-color: $text-color;
+
+$font-size-base: 0.8rem;
+$h1-font-size: 2.2rem;
+$h2-font-size: 1.4rem;
+
+$line-height-base: 1.6;
+
+// Grid
+//
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+$gutter: $grid-gutter-width;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+);
