@@ -1,0 +1,11 @@
+// => Card components
+// ------------------------------------------------------------------------------
+
+.card {
+  border: none;
+  border-radius: 10px;
+
+  .card-title {
+    text-transform: uppercase;
+  }
+}

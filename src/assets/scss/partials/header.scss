@@ -2,8 +2,13 @@
 // ------------------------------------------------------------------------------
 
 .main-header {
-  background-color: theme-color('secondary');
-  padding-top: $gutter * 1.5;
-  padding-bottom: $gutter * 1.5;
-  color: #fff;
+  padding-top: $gutter / 4;
+  padding-bottom: $gutter / 4;
 }
+
+.mainnav {
+  ul {
+    @include reset-list();
+  }
+}
+

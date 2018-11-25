@@ -102,7 +102,7 @@ module.exports = function(grunt) {
                 files: ['src/assets/scripts/**/*.js'],
                 tasks: ['concat', 'uglify']
             },
-            jpg: {
+            gfx: {
                 files: ['src/assets/gfx/*.jpg', 'src/assets/gfx/*.png', 'src/assets/gfx/*.svg'],
                 tasks: ['copy:gfx']
             }

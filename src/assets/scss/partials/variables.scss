@@ -1,20 +1,16 @@
 // => Variables
 // ------------------------------------------------------------------------------
-
-$enable-rounded:            false;
-$enable-shadows:            false;
-$enable-gradients:          false;
-$enable-transitions:        false;
-$enable-hover-media-query:  false;
-$enable-grid-classes:       true;
-$enable-print-styles:       false;
-
 //
 // Color system
 //
 
 $white:  #fff;
 $black:  #000;
+
+$color-primary: #FF595B;
+$color-secondary: #5D66D3;
+$color-light: #F8F8F8;
+$color-dark: #262829;
 
 // Set a specific jump point for requesting color jumps
 $theme-color-interval: 8%;
@@ -25,20 +21,9 @@ $yiq-text-dark: $black;
 $yiq-text-light: $white;
 
 $body-bg: #fff;
-$body-color: $black;
-$link-color: $black;
-$text-color: $black;
-
-$theme-colors: (
-        primary: #134a3e,
-        secondary: #F52331,
-        success: #2ACC45,
-        info: #4DADF7,
-        warning: #FD7E14,
-        danger: #E03131,
-        light: #D0D1D2,
-        dark: #3D3F4B
-);
+$body-color: $color-dark;
+$link-color: $color-primary;
+$text-color: $color-dark;
 
 // Typo
 //
@@ -46,11 +31,16 @@ $theme-colors: (
 $font-family-sans-serif: 'Roboto', sans-serif;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base: $font-family-sans-serif;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
 $headings-color: $text-color;
+$headings-font-weight: $font-weight-bold;
 
-$font-size-base: 0.8rem;
+$font-size-base: 1rem;
 $h1-font-size: 2.2rem;
-$h2-font-size: 1.4rem;
+$h2-font-size: 1.8rem;
+$h3-font-size: 1.4rem;
 
 $line-height-base: 1.6;
 
